@@ -11,6 +11,7 @@ namespace DiceForge {
             uint_t n;
             real_t p;
             std::vector<real_t> pmfs;
+            std::vector<real_t> cdfs;
         public:
             /// @brief Initializes the Binomial Distribution with (n, p)
             /// @param n number of trials 
