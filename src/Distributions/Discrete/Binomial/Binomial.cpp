@@ -14,7 +14,7 @@ Binomial::Binomial(uint_t n, real_t p)
     real_t cumulative = 0.0;
 
     for (int i = 0; i <= n; i++) {
-        pmfs[i] = nCr(n, i) * std::pow(p, i) * std::pow((1-p), i);
+        pmfs[i] = nCr(n, i) * std::pow(p, i) * std::pow((1-p), n-i);
         cumulative += pmfs[i];
         cdfs[i] = cumulative;
     }
