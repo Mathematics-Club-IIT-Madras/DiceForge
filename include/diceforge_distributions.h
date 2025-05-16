@@ -335,6 +335,7 @@ namespace DiceForge {
         private:
             uint_t n;
             real_t p;
+            std::vector<real_t> cdfs;
             std::vector<real_t> pmfs;
         public:
             /// @brief Initializes the Binomial Distribution with (n, p)
