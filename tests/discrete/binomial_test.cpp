@@ -46,7 +46,7 @@ TEST(BinomialDistribution, ChiSquareTest) {
             valid_bins++;
         }
     }
-    int df = valid_bins - 1;
+    //int df = valid_bins - 1;
     double critical_value = 135.81; 
     EXPECT_LT(chi_square, critical_value);
 }
